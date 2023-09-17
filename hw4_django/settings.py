@@ -10,6 +10,7 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -122,3 +123,17 @@ LOGGING = {
         },
     },
 }
+
+JAZZMIN_UI_TWEAKS = {
+    "theme": "darkly",
+    "sticky_actions": True,
+    "actions_sticky_top": True,
+}
+JAZZMIN_SETTINGS = {
+    "site_title": "GB Django",
+    "site_brand": "GB Django",
+}
+
+INTERNAL_IPS = [
+    "127.0.0.1",
+]
